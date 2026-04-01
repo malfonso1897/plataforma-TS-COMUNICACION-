@@ -1,11 +1,14 @@
 {
-  // ── Archivos ──
+  "workbench.colorTheme": "Default Light+",
+  "window.autoDetectColorScheme": false,
+  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.preferredDarkColorTheme": "Default Light+",
+
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "off",
 
-  // ── Editor general ──
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.tabSize": 2,
@@ -27,7 +30,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": true,
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.nonBasicASCII": true,
-  // ── Autocompletado DESACTIVADO ──
+
   "editor.suggestOnTriggerCharacters": false,
   "editor.quickSuggestions": {
     "strings": false,
@@ -39,39 +42,24 @@
   "editor.wordBasedSuggestions": "off",
   "editor.snippetSuggestions": "none",
 
-  // ── Teclado / accesibilidad ──
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.emptySelectionClipboard": false,
 
-  // ── JavaScript ──
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  // ── Visibilidad: evitar texto blanco invisible ──
-  "workbench.colorCustomizations": {
-    "editor.foreground": "#d4d4d4",
-    "editor.background": "#1e1e1e",
-    "terminal.foreground": "#d4d4d4",
-    "terminal.background": "#1e1e1e",
-    "terminal.ansiWhite": "#d4d4d4",
-    "terminal.ansiBrightWhite": "#ffffff",
-    "editorWhitespace.foreground": "#3b3b3b"
-  },
-  "editor.colorDecoratorsLimit": 500,
-
-  // ── Terminal ──
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.smoothScrolling": true,
 
-  // ── Protección: archivos de configuración SOLO LECTURA ──
   "files.readonlyInclude": {
-    ".vscode/settings.json": true,
     ".vscode/launch.json": true,
     ".vscode/tasks.json": true,
     ".vscode/extensions.json": true,
     ".vscode/keybindings.json": true,
     ".editorconfig": true,
-    ".gitignore": true
+    ".gitignore": true,
+    "src/**/*.js": true,
+    "assets/**/*.css": true
   }
 }
